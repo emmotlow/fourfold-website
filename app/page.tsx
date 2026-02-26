@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FadeIn from "@/components/FadeIn";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -14,6 +15,16 @@ const organizationSchema = {
     contactType: "sales",
     url: "https://fourfold.ai/#contact",
   },
+};
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Fourfold.ai — Your idea. Our engineering. A working product in two weeks.",
+  url: "https://fourfold.ai",
+  description:
+    "Fourfold builds working software products in two weeks for $5K. Senior engineers at AI speed, custom AI agents for coordination, outcome-based pricing.",
+  dateModified: "2026-02-26",
 };
 
 const faqSchema = {
@@ -72,120 +83,176 @@ export default function Home() {
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+
       {/* ── Hero ── */}
-      <section className="relative bg-gradient-to-br from-navy-dark via-navy to-navy-light text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-16 left-12 w-40 h-40 border border-white rounded-full" />
-          <div className="absolute top-48 right-24 w-28 h-28 border border-white rounded-full" />
-          <div className="absolute bottom-24 left-1/4 w-20 h-20 border border-white rounded-full" />
+      <section className="relative bg-navy-dark text-white overflow-hidden grain">
+        {/* Decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 -left-8 w-72 h-72 rounded-full border border-white/[0.04] animate-float" />
+          <div className="absolute top-1/3 right-0 w-96 h-96 rounded-full bg-gold/[0.06] blur-[100px]" />
+          <div className="absolute bottom-16 left-1/4 w-40 h-40 rounded-full border border-gold/[0.08] animate-float-slow" />
+          <div className="absolute top-1/2 right-1/3 w-24 h-24 rounded-full border border-white/[0.03] animate-float" />
         </div>
 
-        <div className="max-w-5xl mx-auto px-6 py-24 md:py-36 relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight">
-            Your idea. Our engineering.
-            <br />
-            <span className="text-blue-200">A working product in two weeks.</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Fourfold builds working software products in two weeks for $5K. We
-            pair your market expertise with senior engineers operating at AI
-            speed, so you go from idea to functional MVP without the traditional
-            six-figure investment.
-          </p>
-          <Link
-            href="#contact"
-            className="inline-flex items-center bg-white text-navy px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-100 transition-colors shadow-lg"
-          >
-            Tell Us Your Idea
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
-          <p className="mt-8 text-blue-200 text-base italic">
-            We recently helped a client go from kickoff to working demo in 4
-            days. By week 2, they were onboarding alpha testers.
-          </p>
+        <div className="max-w-6xl mx-auto px-6 py-28 md:py-40 lg:py-48 relative z-10">
+          <FadeIn>
+            <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] font-bold leading-[0.95] tracking-tight mb-8">
+              Your idea.
+              <br />
+              Our engineering.
+              <br />
+              <span className="text-gold">Two weeks.</span>
+            </h1>
+          </FadeIn>
+          <FadeIn delay={150}>
+            <p className="text-lg md:text-xl text-blue-200/70 max-w-2xl leading-relaxed mb-12">
+              Fourfold builds working software products in two weeks for $5K. We
+              pair your market expertise with senior engineers operating at AI
+              speed, so you go from idea to functional MVP without the
+              traditional six-figure investment.
+            </p>
+          </FadeIn>
+          <FadeIn delay={300}>
+            <Link
+              href="#contact"
+              className="inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
+            >
+              Tell Us Your Idea
+              <svg
+                className="ml-2 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
+          </FadeIn>
+          <FadeIn delay={450}>
+            <p className="mt-14 text-sm text-blue-200/50 border-l-2 border-gold/40 pl-4 max-w-lg">
+              We recently helped a client go from kickoff to working demo in 4
+              days. By week 2, they were onboarding alpha testers.
+            </p>
+          </FadeIn>
         </div>
       </section>
 
       {/* ── Section 1: Economics Changed ── */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-24 md:py-32 bg-white">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 tracking-tight">
-            The Economics of Building Changed. Most People Missed It.
-          </h2>
+          <FadeIn>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-tight">
+              The Economics of Building Changed.{" "}
+              <span className="text-slate-400">Most People Missed It.</span>
+            </h2>
+          </FadeIn>
           <div className="text-lg text-slate-600 leading-relaxed space-y-6">
-            <p>
-              A year ago, building a software product meant six figures and six
-              months before you knew if anyone would use it. That math killed
-              more good ideas than bad ones.
-            </p>
-            <p>
-              AI rewrote that math. Today, a senior engineer using tools like
-              Claude Code can build in days what used to take a full team months.
-              One of our developers built a production booking platform, live and
-              handling 1,000 daily users, in 50 hours. Another built a database
-              tool over a weekend that outperforms products charging $100+/year.
-            </p>
-            <p>
-              The gap between &ldquo;I have an idea&rdquo; and &ldquo;I have a
-              product&rdquo; has never been smaller. But there&rsquo;s still a
-              gap between having AI tools and knowing how to use them to build
-              production software.{" "}
-              <span className="font-semibold text-slate-800">
-                That&rsquo;s where we come in.
-              </span>
-            </p>
+            <FadeIn>
+              <p>
+                A year ago, building a software product meant six figures and six
+                months before you knew if anyone would use it. That math killed
+                more good ideas than bad ones.
+              </p>
+            </FadeIn>
+            <FadeIn delay={100}>
+              <p>
+                AI rewrote that math. Today, a senior engineer using tools like
+                Claude Code can build in days what used to take a full team
+                months. One of our developers built a production booking
+                platform, live and handling 1,000 daily users, in 50 hours.
+                Another built a database tool over a weekend that outperforms
+                products charging $100+/year.
+              </p>
+            </FadeIn>
+            <FadeIn delay={200}>
+              <p>
+                The gap between &ldquo;I have an idea&rdquo; and &ldquo;I have a
+                product&rdquo; has never been smaller. But there&rsquo;s still a
+                gap between having AI tools and knowing how to use them to build
+                production software.{" "}
+                <span className="font-semibold text-slate-900">
+                  That&rsquo;s where we come in.
+                </span>
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
 
       {/* ── Section 2: You Have the Hardest Part ── */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="py-24 md:py-32 bg-sand">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 tracking-tight">
-            You Have the Hardest Part Figured Out
-          </h2>
+          <FadeIn>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-tight">
+              You Have the Hardest Part Figured Out
+            </h2>
+          </FadeIn>
           <div className="text-lg text-slate-600 leading-relaxed space-y-6">
-            <p>
-              The best products don&rsquo;t come from people who know how to
-              code. They come from people who deeply understand a problem: the
-              entrepreneur who&rsquo;s spent years in an industry, the small
-              business owner who sees an opportunity, the family business ready
-              to build something new.
-            </p>
-            <p>
-              You already have the market knowledge and the insight into what
-              needs to exist. What you need is a technical partner who can turn
-              that into a real product, fast and affordably.
-            </p>
-            <p className="text-xl font-semibold text-navy">
-              Fourfold is that partner.
-            </p>
-            <p>
-              We&rsquo;re not a dev shop that quotes months and bills by the
-              hour. We&rsquo;re a lean engineering team operating at AI speed,
-              with custom AI agents that coordinate your project and keep
-              everyone aligned to outcomes from day one.
-            </p>
+            <FadeIn>
+              <p>
+                The best products don&rsquo;t come from people who know how to
+                code. They come from people who deeply understand a problem: the
+                entrepreneur who&rsquo;s spent years in an industry, the small
+                business owner who sees an opportunity, the family business ready
+                to build something new.
+              </p>
+            </FadeIn>
+            <FadeIn delay={100}>
+              <p>
+                You already have the market knowledge and the insight into what
+                needs to exist. What you need is a technical partner who can turn
+                that into a real product, fast and affordably.
+              </p>
+            </FadeIn>
+            <FadeIn delay={200}>
+              <p className="font-display text-2xl font-bold text-navy">
+                Fourfold is that partner.
+              </p>
+            </FadeIn>
+            <FadeIn delay={250}>
+              <p>
+                We&rsquo;re not a dev shop that quotes months and bills by the
+                hour. We&rsquo;re a lean engineering team operating at AI speed,
+                with custom AI agents that coordinate your project and keep
+                everyone aligned to outcomes from day one.
+              </p>
+            </FadeIn>
           </div>
-          <div className="mt-10 bg-navy text-white rounded-xl p-8 text-center">
-            <p className="text-2xl md:text-3xl font-bold">
-              $5K. Two weeks. A working product at the end.
-            </p>
-          </div>
+          <FadeIn delay={350}>
+            <div className="mt-12 border-l-4 border-gold bg-white rounded-r-2xl p-8 md:p-10 shadow-sm">
+              <p className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-navy leading-tight">
+                $5K. Two weeks.{" "}
+                <span className="text-gold-dark">A working product.</span>
+              </p>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* ── Section 3: How It Works ── */}
-      <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-14 tracking-tight text-center">
-            How It Works
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+      <section className="py-24 md:py-32 bg-white">
+        <div className="max-w-3xl mx-auto px-6">
+          <FadeIn>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-16 leading-tight text-center">
+              How It Works
+            </h2>
+          </FadeIn>
+
+          <div className="relative">
+            {/* Connecting line */}
+            <div className="absolute left-5 top-0 bottom-0 w-px bg-slate-200" />
+
             {[
               {
                 step: "1",
@@ -207,33 +274,39 @@ export default function Home() {
                 title: "You decide what\u2019s next.",
                 body: "Two weeks later, you have a functional product you can demo, test with customers, or show investors. Plus a clear technical roadmap and the evidence to decide whether this idea deserves your full investment.",
               },
-            ].map((item) => (
-              <div
-                key={item.step}
-                className="flex gap-5 p-6 rounded-xl bg-slate-50 border border-slate-200"
-              >
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-lg">
-                  {item.step}
+            ].map((item, i) => (
+              <FadeIn key={item.step} delay={i * 120}>
+                <div className="relative flex gap-6 pb-14 last:pb-0">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold text-navy-dark flex items-center justify-center font-display font-bold text-lg relative z-10 shadow-md shadow-gold/20">
+                    {item.step}
+                  </div>
+                  <div className="pt-1">
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-600 leading-relaxed">
+                      {item.body}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed">{item.body}</p>
-                </div>
-              </div>
+              </FadeIn>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── Section 4: Why Fourfold Delivers Differently ── */}
-      <section className="py-20 md:py-28 bg-slate-50">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-14 tracking-tight text-center">
-            Why Fourfold Delivers Differently
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+      <section className="py-24 md:py-32 bg-navy grain text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-gold/[0.04] blur-[80px]" />
+        </div>
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
+          <FadeIn>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-16 leading-tight text-center">
+              Why Fourfold Delivers Differently
+            </h2>
+          </FadeIn>
+          <div className="grid md:grid-cols-2 gap-6">
             {[
               {
                 title: "Engineers who\u2019ve mastered AI development",
@@ -251,28 +324,32 @@ export default function Home() {
                 title: "Senior review on every line",
                 body: "AI writes code fast. Experienced engineers make sure it\u2019s the right code. Every line is reviewed for quality, security, and scalability.",
               },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm"
-              >
-                <h3 className="text-xl font-bold text-navy mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-slate-600 leading-relaxed">{item.body}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 100}>
+                <div className="bg-white/[0.05] backdrop-blur-sm border border-white/[0.08] p-8 rounded-2xl hover:bg-white/[0.08] transition-all duration-300 h-full">
+                  <div className="w-8 h-0.5 bg-gold mb-5" />
+                  <h3 className="text-lg font-bold text-white mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-blue-200/60 leading-relaxed">
+                    {item.body}
+                  </p>
+                </div>
+              </FadeIn>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── Section 5: Who This Is For ── */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-24 md:py-32 bg-sand">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-14 tracking-tight text-center">
-            Who This Is For
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-8">
+          <FadeIn>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-16 leading-tight text-center">
+              Who This Is For
+            </h2>
+          </FadeIn>
+          <div className="grid sm:grid-cols-2 gap-6">
             {[
               {
                 title: "You\u2019ve been sitting on an idea.",
@@ -290,48 +367,59 @@ export default function Home() {
                 title: "You want to validate before you invest.",
                 body: "A two-week MVP is the smartest beginning. You\u2019ll know whether the technology works, whether customers want it, and whether it deserves your next dollar.",
               },
-            ].map((item) => (
-              <div key={item.title} className="flex gap-4">
-                <div className="flex-shrink-0 mt-1">
-                  <div className="w-2 h-2 rounded-full bg-navy" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 100}>
+                <div className="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
+                  <h3 className="font-display text-xl font-bold text-slate-900 mb-3">
                     {item.title}
                   </h3>
                   <p className="text-slate-600 leading-relaxed">{item.body}</p>
                 </div>
-              </div>
+              </FadeIn>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── CTA / Contact Form ── */}
-      <section id="contact" className="py-20 md:py-28 bg-slate-50">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
-            Tell Us Your Idea
-          </h2>
-          <p className="text-lg text-slate-600 mb-10">
-            It starts here. Tell us what you&rsquo;re thinking. A few sentences
-            is plenty. We&rsquo;ll get back to you within 48 hours.
-          </p>
+      <section
+        id="contact"
+        className="py-24 md:py-32 bg-navy-dark grain text-white overflow-hidden"
+      >
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-1/4 w-64 h-64 rounded-full bg-gold/[0.04] blur-[80px]" />
+        </div>
+        <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
+          <FadeIn>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+              Tell Us Your Idea
+            </h2>
+          </FadeIn>
+          <FadeIn delay={100}>
+            <p className="text-lg text-blue-200/60 mb-12">
+              It starts here. Tell us what you&rsquo;re thinking. A few
+              sentences is plenty. We&rsquo;ll get back to you within 48 hours.
+            </p>
+          </FadeIn>
 
-          <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-8 md:p-12">
-            <iframe
-              data-tally-src="https://tally.so/embed/LZdzVv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-              loading="lazy"
-              width="100%"
-              height="500"
-              frameBorder="0"
-              title="Tell Us Your Idea"
-            />
-          </div>
+          <FadeIn delay={200}>
+            <div className="bg-white rounded-2xl shadow-2xl shadow-black/20 p-8 md:p-12">
+              <iframe
+                data-tally-src="https://tally.so/embed/LZdzVv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height="500"
+                frameBorder="0"
+                title="Tell Us Your Idea"
+              />
+            </div>
+          </FadeIn>
 
-          <p className="mt-6 text-slate-500 text-sm">
-            No commitment. No jargon. Just a real conversation about your idea.
-          </p>
+          <FadeIn delay={300}>
+            <p className="mt-8 text-blue-200/40 text-sm">
+              No commitment. No jargon. Just a real conversation about your idea.
+            </p>
+          </FadeIn>
         </div>
       </section>
     </>
