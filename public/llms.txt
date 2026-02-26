@@ -1,0 +1,32 @@
+# Fourfold.ai
+
+> Fourfold is a lean engineering company that builds working software products in two weeks for $5K. We pair senior engineers operating at AI speed with custom Pact AI agents for project coordination. Our clients are aspiring entrepreneurs, small businesses, and family businesses who need a technical partner to move from idea to working MVP.
+
+## Core offering
+
+- Outcome-based pricing: $5K flat fee, two-week delivery, working product at the end
+- Senior engineers who have mastered AI-assisted development (Claude Code, LLM orchestration, prompt engineering)
+- Custom Pact AI agents for real-time project coordination, risk detection, and stakeholder alignment
+- Senior human review on every line of AI-generated code for quality, security, and scalability
+- Full code ownership — your product, your codebase, your IP, no lock-in
+
+## Key URLs
+
+- Homepage: https://fourfold.ai/
+- How We Work: https://fourfold.ai/how-we-work
+- Outcome-Driven Management (ODM): https://fourfold.ai/outcome-driven-management
+- Contact form: https://fourfold.ai/#contact
+
+## Outcome-Driven Management (ODM)
+
+ODM is Fourfold's management framework that makes outcomes, not tasks, the atomic unit of work. It is designed to be continuous, fast, and cost-effective by aligning with how people work in modern organizations. ODM is implemented using existing systems of record and powered by Pact AI agents. Learn more at https://withpact.com/
+
+## Results
+
+- Production booking platform built in 50 hours, live and handling 1,000 daily users
+- Client went from kickoff to working demo in 4 days; onboarding alpha testers by week 2
+- Identity security company engagement delivered in half the expected time using Fourfold's lean delivery model and Pact's agentic outcome management platform
+
+## Contact
+
+To start a project or learn more, visit https://fourfold.ai/#contact
