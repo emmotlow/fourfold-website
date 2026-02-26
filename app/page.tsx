@@ -101,7 +101,7 @@ export default function Home() {
           <div className="absolute top-1/2 right-1/3 w-24 h-24 rounded-full border border-white/[0.03] animate-float" />
         </div>
 
-        <div className="max-w-6xl mx-auto px-6 py-28 md:py-40 lg:py-48 relative z-10">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 lg:py-36 relative z-10">
           <FadeIn>
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] font-bold leading-[0.95] tracking-tight mb-8">
               Your idea.
@@ -141,7 +141,7 @@ export default function Home() {
             </Link>
           </FadeIn>
           <FadeIn delay={450}>
-            <p className="mt-14 text-sm text-blue-200/50 border-l-2 border-gold/40 pl-4 max-w-lg">
+            <p className="mt-10 text-base text-blue-200/50 border-l-2 border-gold/40 pl-4 max-w-lg">
               We recently helped a client go from kickoff to working demo in 4
               days. By week 2, they were onboarding alpha testers.
             </p>

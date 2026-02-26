@@ -22,7 +22,7 @@ export default function Nav() {
               alt="Fourfold"
               width={160}
               height={64}
-              className="h-14 w-auto"
+              className="h-20 w-auto"
               priority
             />
           </Link>

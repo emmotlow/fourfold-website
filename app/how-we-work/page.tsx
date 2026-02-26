@@ -133,7 +133,7 @@ export default function HowWeWork() {
             </FadeIn>
 
             <FadeIn delay={150}>
-              <p className="text-xs uppercase tracking-widest text-gold font-semibold mb-8">
+              <p className="text-sm uppercase tracking-widest text-gold font-semibold mb-8">
                 What the agents do
               </p>
             </FadeIn>

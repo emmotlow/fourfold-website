@@ -13,7 +13,7 @@ export default function Footer() {
                 alt="Fourfold"
                 width={120}
                 height={48}
-                className="h-12 w-auto brightness-0 invert"
+                className="h-20 w-auto brightness-0 invert"
               />
             </Link>
             <p className="mt-4 text-blue-200/50 text-sm max-w-xs leading-relaxed">
