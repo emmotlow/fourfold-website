@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import TallyEmbed from "@/components/TallyEmbed";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -404,14 +405,7 @@ export default function Home() {
 
           <FadeIn delay={200}>
             <div className="bg-white rounded-2xl shadow-2xl shadow-black/20 p-8 md:p-12">
-              <iframe
-                data-tally-src="https://tally.so/embed/LZdzVv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                loading="lazy"
-                width="100%"
-                height="500"
-                frameBorder="0"
-                title="Tell Us Your Idea"
-              />
+              <TallyEmbed />
             </div>
           </FadeIn>
 
