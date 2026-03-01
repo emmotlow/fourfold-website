@@ -173,7 +173,7 @@ export default function Home() {
                 months. One of our developers built a production booking
                 platform, live and handling 1,000 daily users, in 50 hours.
                 Another built a database tool over a weekend that outperforms
-                products charging $100+/year.
+                products charging $100+/month.
               </p>
             </FadeIn>
             <FadeIn delay={200}>
