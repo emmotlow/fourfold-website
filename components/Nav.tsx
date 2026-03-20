@@ -10,7 +10,6 @@ export default function Nav() {
   const links = [
     { href: "/how-we-work", label: "How We Work" },
     { href: "/pact", label: "The Platform" },
-    { href: "/blog", label: "Blog" },
   ];
 
   return (

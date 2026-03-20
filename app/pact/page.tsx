@@ -89,6 +89,35 @@ export default function PactPage() {
               </FadeIn>
             ))}
           </div>
+          <FadeIn delay={400}>
+            <p className="text-lg text-slate-600 leading-relaxed mt-12 text-center">
+              Read about Outcome-Driven Management (ODM), the operating
+              framework behind everything Pact does.
+            </p>
+          </FadeIn>
+          <FadeIn delay={500}>
+            <div className="mt-8 text-center">
+              <Link
+                href="/blog/outcome-driven-management"
+                className="inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
+              >
+                More on ODM
+                <svg
+                  className="ml-2 w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
