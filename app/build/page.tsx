@@ -236,8 +236,8 @@ export default function BuildPage() {
         </div>
       </section>
 
-      {/* ── Section 5: FAQ Accordion (Sand) ── */}
-      <section className="py-24 md:py-32 bg-sand">
+      {/* ── Section 5: FAQ Accordion (White) ── */}
+      <section className="py-24 md:py-32 bg-white">
         <div className="max-w-3xl mx-auto px-6">
           <FadeIn>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-16 leading-tight text-center">
