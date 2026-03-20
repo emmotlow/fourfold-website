@@ -74,7 +74,7 @@ const steps = [
   {
     step: "2",
     label: "We scope the MVP.",
-    detail: "48 hours. You'll know the exact cost and timeline.",
+    detail: "48 hours. You'll know the $5K scope.",
   },
   {
     step: "3",
