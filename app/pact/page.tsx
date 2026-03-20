@@ -143,7 +143,7 @@ export default function PactPage() {
             </h2>
           </FadeIn>
           <FadeIn delay={100}>
-            <div className="text-lg text-blue-200/60 leading-relaxed space-y-6 mb-10 text-left max-w-2xl mx-auto">
+            <div className="text-lg text-blue-200/60 leading-relaxed space-y-6 mb-10 text-center max-w-2xl mx-auto">
               <p>
                 Pact is the platform. Fourfold is how you access it.
               </p>
@@ -157,10 +157,9 @@ export default function PactPage() {
             </div>
           </FadeIn>
           <FadeIn delay={200}>
-            <p className="font-display text-2xl md:text-3xl font-bold text-white mb-10">
-              $5K. Two weeks. A working product and a system that already knows
-              your business.
-            </p>
+            <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-10">
+              Ready to Build?
+            </h3>
           </FadeIn>
           <FadeIn delay={300}>
             <Link
