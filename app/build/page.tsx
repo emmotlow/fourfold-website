@@ -101,11 +101,6 @@ export default function BuildPage() {
 
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 lg:py-36 relative z-10">
           <FadeIn>
-            <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-6">
-              You&rsquo;ve already tried. Now let&rsquo;s actually build it.
-            </p>
-          </FadeIn>
-          <FadeIn delay={100}>
             <h1 className="font-display text-4xl md:text-6xl lg:text-[5rem] font-bold leading-[0.95] tracking-tight mb-8">
               You did the hard part.
               <br />
@@ -211,6 +206,11 @@ export default function BuildPage() {
       {/* ── Section 4: How It Works / Process Strip (Sand) ── */}
       <section className="py-24 md:py-32 bg-sand">
         <div className="max-w-5xl mx-auto px-6">
+          <FadeIn>
+            <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-12 text-center">
+              You&rsquo;ve already tried. Now let&rsquo;s actually build it.
+            </p>
+          </FadeIn>
           <div className="grid md:grid-cols-4 gap-8 md:gap-6 relative">
             {/* Connecting line (desktop only) */}
             <div className="hidden md:block absolute top-5 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-px bg-gold/30" />
