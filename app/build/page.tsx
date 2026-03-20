@@ -175,35 +175,7 @@ export default function BuildPage() {
         </div>
       </section>
 
-      {/* ── Section 3: How It Works / Process Strip (Sand) ── */}
-      <section className="py-24 md:py-32 bg-sand">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8 md:gap-6 relative">
-            {/* Connecting line (desktop only) */}
-            <div className="hidden md:block absolute top-5 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-px bg-gold/30" />
-            {/* Connecting line (mobile only) */}
-            <div className="md:hidden absolute left-5 top-0 bottom-0 w-px bg-gold/30" />
-
-            {steps.map((item, i) => (
-              <FadeIn key={item.step} delay={i * 100}>
-                <div className="relative flex md:flex-col md:items-center md:text-center gap-5 md:gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold text-navy-dark flex items-center justify-center font-display font-bold text-lg relative z-10 shadow-md shadow-gold/20">
-                    {item.step}
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-slate-900 mb-1">
-                      {item.label}
-                    </h3>
-                    <p className="text-sm text-slate-500">{item.detail}</p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Section 4: Proof / Case Study (Navy Dark) ── */}
+      {/* ── Section 3: Proof / Case Study (Navy Dark) ── */}
       <section className="py-24 md:py-32 bg-navy-dark grain text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-gold/[0.04] blur-[80px]" />
@@ -233,6 +205,34 @@ export default function BuildPage() {
               something new.
             </p>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* ── Section 4: How It Works / Process Strip (Sand) ── */}
+      <section className="py-24 md:py-32 bg-sand">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-8 md:gap-6 relative">
+            {/* Connecting line (desktop only) */}
+            <div className="hidden md:block absolute top-5 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-px bg-gold/30" />
+            {/* Connecting line (mobile only) */}
+            <div className="md:hidden absolute left-5 top-0 bottom-0 w-px bg-gold/30" />
+
+            {steps.map((item, i) => (
+              <FadeIn key={item.step} delay={i * 100}>
+                <div className="relative flex md:flex-col md:items-center md:text-center gap-5 md:gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold text-navy-dark flex items-center justify-center font-display font-bold text-lg relative z-10 shadow-md shadow-gold/20">
+                    {item.step}
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-slate-900 mb-1">
+                      {item.label}
+                    </h3>
+                    <p className="text-sm text-slate-500">{item.detail}</p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
