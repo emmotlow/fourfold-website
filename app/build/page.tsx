@@ -218,17 +218,6 @@ export default function BuildPage() {
               <p className="text-gold-light text-sm font-semibold">
                 &mdash; Whitney Elliott, Owner, Planorize
               </p>
-              <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm">
-                <span className="text-gold font-semibold">
-                  Kickoff to working demo: 4 days
-                </span>
-                <span className="text-white/20 hidden sm:inline">
-                  &middot;
-                </span>
-                <span className="text-gold font-semibold">
-                  Alpha testers onboarding: Week 2
-                </span>
-              </div>
             </div>
           </FadeIn>
 
