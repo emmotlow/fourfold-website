@@ -244,39 +244,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Section 4: Why Now (White) ── */}
+      {/* ── Section 4: Who It's For (White) ── */}
       <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <FadeIn>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-tight">
-              The economics of building changed.{" "}
-              <span className="text-slate-400">Most people missed it.</span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-16 leading-tight text-center">
+              You need custom software. You don&rsquo;t need an engineering
+              department.
             </h2>
           </FadeIn>
-          <div className="text-lg text-slate-600 leading-relaxed space-y-6">
-            <FadeIn delay={100}>
-              <p>
-                A year ago, building a software product meant six figures and six
-                months before you knew if anyone wanted it. AI rewrote that math.
-                A senior engineer on Pact can now build in days what used to take
-                a team weeks.
-              </p>
-            </FadeIn>
-            <FadeIn delay={200}>
-              <p>
-                The gap between &ldquo;I have an idea&rdquo; and &ldquo;I have a
-                product&rdquo; has never been smaller.
-              </p>
-            </FadeIn>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Teams without engineering bandwidth.",
+                body: "Your marketing, sales, HR, or ops team knows exactly what tool they need. They just can\u2019t get on the engineering roadmap. Pact lets them ship without waiting.",
+              },
+              {
+                title: "Founders and solopreneurs.",
+                body: "You want to ship a real product, not a slide deck. Pact gives you production-grade engineering capacity without hiring a team.",
+              },
+              {
+                title: "Companies that keep building.",
+                body: "You don\u2019t need one app. You need an ongoing ability to turn ideas into working software. Pact compounds knowledge across engagements, so every engagement builds on the last.",
+              },
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 100}>
+                <div className="bg-sand p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
+                  <h3 className="font-display text-lg font-bold text-slate-900 mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed text-sm">
+                    {item.body}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
           </div>
-          <FadeIn delay={300}>
-            <div className="mt-12 border-l-4 border-gold bg-sand rounded-r-2xl p-8 md:p-10 shadow-sm">
-              <p className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-navy leading-tight">
-                $5K. Two weeks.{" "}
-                <span className="text-gold-dark">A working product.</span>
-              </p>
-            </div>
-          </FadeIn>
         </div>
       </section>
 

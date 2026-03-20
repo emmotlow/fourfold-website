@@ -92,46 +92,7 @@ export default function PactPage() {
         </div>
       </section>
 
-      {/* ── Section 3: Who It's For (Sand) ── */}
-      <section className="py-24 md:py-32 bg-sand">
-        <div className="max-w-4xl mx-auto px-6">
-          <FadeIn>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-16 leading-tight text-center">
-              You need custom software. You don&rsquo;t need an engineering
-              department.
-            </h2>
-          </FadeIn>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Teams without engineering bandwidth.",
-                body: "Your marketing, sales, HR, or ops team knows exactly what tool they need. They just can't get on the engineering roadmap. Pact lets them ship without waiting.",
-              },
-              {
-                title: "Founders and solopreneurs.",
-                body: "You want to ship a real product, not a slide deck. Pact gives you production-grade engineering capacity without hiring a team.",
-              },
-              {
-                title: "Companies that keep building.",
-                body: "You don't need one app. You need an ongoing ability to turn ideas into working software. Pact compounds knowledge across engagements, so every engagement builds on the last.",
-              },
-            ].map((item, i) => (
-              <FadeIn key={item.title} delay={i * 100}>
-                <div className="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
-                  <h3 className="font-display text-lg font-bold text-slate-900 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed text-sm">
-                    {item.body}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Section 4: Pact + Fourfold CTA (Navy Dark) ── */}
+      {/* ── Section 3: Pact + Fourfold CTA (Navy Dark) ── */}
       <section className="relative bg-navy-dark text-white overflow-hidden grain py-24 md:py-32">
         <div className="absolute inset-0">
           <div className="absolute bottom-0 right-1/4 w-72 h-72 rounded-full bg-gold/[0.04] blur-[80px]" />

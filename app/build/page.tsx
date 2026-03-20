@@ -236,8 +236,44 @@ export default function BuildPage() {
         </div>
       </section>
 
-      {/* ── Section 5: FAQ Accordion (White) ── */}
+      {/* ── Section 5: Why Now (White) ── */}
       <section className="py-24 md:py-32 bg-white">
+        <div className="max-w-3xl mx-auto px-6">
+          <FadeIn>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-tight">
+              The economics of building changed.{" "}
+              <span className="text-slate-400">Most people missed it.</span>
+            </h2>
+          </FadeIn>
+          <div className="text-lg text-slate-600 leading-relaxed space-y-6">
+            <FadeIn delay={100}>
+              <p>
+                A year ago, building a software product meant six figures and six
+                months before you knew if anyone wanted it. AI rewrote that math.
+                A senior engineer on Pact can now build in days what used to take
+                a team weeks.
+              </p>
+            </FadeIn>
+            <FadeIn delay={200}>
+              <p>
+                The gap between &ldquo;I have an idea&rdquo; and &ldquo;I have a
+                product&rdquo; has never been smaller.
+              </p>
+            </FadeIn>
+          </div>
+          <FadeIn delay={300}>
+            <div className="mt-12 border-l-4 border-gold bg-sand rounded-r-2xl p-8 md:p-10 shadow-sm">
+              <p className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-navy leading-tight">
+                $5K. Two weeks.{" "}
+                <span className="text-gold-dark">A working product.</span>
+              </p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* ── Section 6: FAQ Accordion (Sand) ── */}
+      <section className="py-24 md:py-32 bg-sand">
         <div className="max-w-3xl mx-auto px-6">
           <FadeIn>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-16 leading-tight text-center">
