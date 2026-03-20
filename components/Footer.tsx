@@ -33,10 +33,16 @@ export default function Footer() {
                 How We Work
               </Link>
               <Link
-                href="/outcome-driven-management"
+                href="/pact"
                 className="text-slate-500 hover:text-navy text-sm transition-colors"
               >
-                Our Approach
+                The Platform
+              </Link>
+              <Link
+                href="/blog"
+                className="text-slate-500 hover:text-navy text-sm transition-colors"
+              >
+                Blog
               </Link>
               <Link
                 href="/#contact"

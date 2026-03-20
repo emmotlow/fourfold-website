@@ -9,7 +9,8 @@ export default function Nav() {
 
   const links = [
     { href: "/how-we-work", label: "How We Work" },
-    { href: "/outcome-driven-management", label: "Our Approach" },
+    { href: "/pact", label: "The Platform" },
+    { href: "/blog", label: "Blog" },
   ];
 
   return (

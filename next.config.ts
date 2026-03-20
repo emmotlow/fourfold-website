@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/how-we-work",
         permanent: true,
       },
+      {
+        source: "/outcome-driven-management",
+        destination: "/blog/outcome-driven-management",
+        permanent: true,
+      },
     ];
   },
 };
