@@ -192,14 +192,30 @@ export default function HowWeWork() {
             </h2>
           </FadeIn>
           <FadeIn delay={100}>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              A working product that real users can interact with. Full code
-              ownership, your IP, no lock-in. A technical roadmap with clear
-              documentation of what was built, how it&rsquo;s structured, and
-              where to go next. Real-time visibility throughout the engagement
-              via Pact. And an honest assessment: if we think you should pivot,
-              scale up, or walk away, we&rsquo;ll tell you.
-            </p>
+            <ul className="space-y-4 text-lg text-slate-600">
+              {[
+                "A working product that real users can interact with",
+                "Full code ownership, your IP, no lock-in",
+                "A technical roadmap with clear documentation of what was built, how it\u2019s structured, and where to go next",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <svg
+                    className="w-5 h-5 text-gold flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span className="leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
           </FadeIn>
         </div>
       </section>
