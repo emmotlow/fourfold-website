@@ -197,6 +197,7 @@ export default function HowWeWork() {
                 "A working product that real users can interact with",
                 "Full code ownership, your IP, no lock-in",
                 "A technical roadmap with clear documentation of what was built, how it\u2019s structured, and where to go next",
+                "A system that already knows your business via Pact",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <svg
