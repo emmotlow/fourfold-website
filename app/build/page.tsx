@@ -196,7 +196,7 @@ export default function BuildPage() {
 
           <FadeIn delay={300}>
             <p className="text-center text-gold-light/60 text-sm mt-10">
-              More case studies coming soon. Every engagement teaches us
+              Case studies coming soon. Every engagement teaches us
               something new.
             </p>
           </FadeIn>
