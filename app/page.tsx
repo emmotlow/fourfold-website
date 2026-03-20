@@ -257,11 +257,11 @@ export default function Home() {
             {[
               {
                 title: "Teams without engineering bandwidth.",
-                body: "Your marketing, sales, HR, or ops team knows exactly what tool they need. They just can\u2019t get on the engineering roadmap. Pact lets them ship without waiting.",
+                body: "Your marketing, sales, HR, or ops team knows exactly what tool they need. They just can\u2019t get on the engineering roadmap. Fourfold + Pact helps them ship without waiting.",
               },
               {
                 title: "Founders and solopreneurs.",
-                body: "You want to ship a real product, not a slide deck. Pact gives you production-grade engineering capacity without hiring a team.",
+                body: "You want to ship a real product, not a slide deck. Fourfold gives you production-grade engineering capacity without hiring a team.",
               },
               {
                 title: "Companies that keep building.",

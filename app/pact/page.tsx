@@ -100,14 +100,11 @@ export default function PactPage() {
         <div className="max-w-3xl mx-auto px-6 relative z-10 text-center">
           <FadeIn>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight">
-              The system and the service.
+              Pact is the platform. Fourfold is how you access it.
             </h2>
           </FadeIn>
           <FadeIn delay={100}>
             <div className="text-lg text-blue-200/60 leading-relaxed space-y-6 mb-10 text-center max-w-2xl mx-auto">
-              <p>
-                Pact is the platform. Fourfold is how you access it.
-              </p>
               <p>
                 When you work with Fourfold, you get a senior engineer who makes
                 the judgment calls, the architectural decisions, and the quality
