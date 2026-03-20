@@ -277,33 +277,6 @@ export default function Home() {
               </p>
             </div>
           </FadeIn>
-          <FadeIn delay={400}>
-            <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
-              <Link
-                href="#contact"
-                className="inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
-              >
-                Tell Us Your Idea
-                <svg
-                  className="ml-2 w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link>
-              <p className="text-sm text-slate-400">
-                No commitment. No jargon. Just a real conversation about what
-                you&rsquo;re building.
-              </p>
-            </div>
-          </FadeIn>
         </div>
       </section>
 
