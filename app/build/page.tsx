@@ -273,7 +273,7 @@ export default function BuildPage() {
               <p>
                 A year ago, building a software product meant six figures and six
                 months before you knew if anyone wanted it. AI rewrote that math.
-                A senior engineer on Pact can now build in days what used to take
+                A senior engineer can now build in days what used to take
                 a team weeks.
               </p>
             </FadeIn>
