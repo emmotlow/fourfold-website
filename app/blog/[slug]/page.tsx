@@ -4,6 +4,7 @@ import FadeIn from "@/components/FadeIn";
 import BlogPostCTA from "@/components/BlogPostCTA";
 import { blogPosts, getPost } from "@/lib/blog-posts";
 import ODMContent from "./odm-content";
+import PlanorizeContent from "./planorize-content";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -31,6 +32,7 @@ export async function generateMetadata({
 }
 
 const contentMap: Record<string, React.ComponentType> = {
+  planorize: PlanorizeContent,
   "outcome-driven-management": ODMContent,
 };
 

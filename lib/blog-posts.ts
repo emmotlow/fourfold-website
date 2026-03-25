@@ -8,6 +8,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "planorize",
+    title: "Planorize: From Six Tools to One App in 10 Days",
+    date: "2026-03-19",
+    author: "Fourfold.ai",
+    excerpt:
+      "How Pact helped a professional organizing business replace a six-tool workflow with one AI-powered app in 10 days.",
+  },
+  {
     slug: "outcome-driven-management",
     title: "Outcome-Driven Management: A New Operating System for Work",
     date: "2026-03-20",

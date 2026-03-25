@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: "https://fourfold.ai/blog/planorize",
+      lastModified: new Date("2026-03-25"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: "https://fourfold.ai/blog/outcome-driven-management",
       lastModified: new Date("2026-03-20"),
       changeFrequency: "monthly",
