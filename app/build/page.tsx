@@ -191,12 +191,6 @@ export default function BuildPage() {
               <p className="text-gold-light text-sm font-semibold mb-3">
                 &mdash; Whitney Elliott, Owner, Planorize
               </p>
-              <Link
-                href="/blog/planorize"
-                className="text-gold hover:text-gold-light text-sm font-semibold transition-colors"
-              >
-                Read the full case study &rarr;
-              </Link>
             </div>
           </FadeIn>
 
@@ -204,10 +198,9 @@ export default function BuildPage() {
             <p className="text-center mt-10">
               <Link
                 href="/blog/planorize"
-                className="text-gold-light/60 hover:text-gold-light text-sm transition-colors"
+                className="text-gold hover:text-gold-light text-sm font-semibold transition-colors"
               >
-                Read how we helped Whitney replace a six-tool workflow with one
-                AI-powered app.
+                Read the full case study &rarr;
               </Link>
             </p>
           </FadeIn>
