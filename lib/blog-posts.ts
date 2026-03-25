@@ -10,7 +10,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "planorize",
     title: "Planorize: From Six Tools to One App in 10 Days",
-    date: "2026-03-19",
+    date: "2026-03-25",
     author: "Fourfold.ai",
     excerpt:
       "How Pact helped a professional organizing business replace a six-tool workflow with one AI-powered app in 10 days.",
