@@ -111,11 +111,13 @@ export default async function BlogPostPage({
       <article className="bg-white">
         {Content ? <Content /> : null}
 
-        <section className="pb-24 md:pb-32">
-          <div className="max-w-3xl mx-auto px-6">
-            <BlogPostCTA />
-          </div>
-        </section>
+        {post.slug !== "planorize" && (
+          <section className="pb-24 md:pb-32">
+            <div className="max-w-3xl mx-auto px-6">
+              <BlogPostCTA />
+            </div>
+          </section>
+        )}
       </article>
     </>
   );
