@@ -38,7 +38,7 @@ export default function PlanorizeContent() {
           <FadeIn delay={150}>
             <div className="border-l-4 border-gold bg-sand rounded-r-2xl p-8 md:p-10 mt-12">
               <p className="font-display text-xl md:text-2xl italic text-slate-900 leading-relaxed mb-4">
-                &ldquo;Pact built in 2 weeks what another vendor had quoted at 4
+                &ldquo;Fourfold built in 2 weeks what another vendor had quoted at 4
                 months.&rdquo;
               </p>
               <p className="text-gold-dark text-sm font-semibold">
@@ -81,7 +81,7 @@ export default function PlanorizeContent() {
                 Whitney was looking for a solution to streamline her
                 team&rsquo;s operations, but it didn&rsquo;t exist. She had a
                 vision for what she wanted and even talked to another vendor
-                whose quote was too costly. So she tapped Pact to see if it
+                whose quote was too costly. So she tapped Fourfold to see if it
                 could be built faster.
               </p>
             </FadeIn>
@@ -100,7 +100,7 @@ export default function PlanorizeContent() {
           <div className="text-lg text-slate-600 leading-relaxed space-y-6">
             <FadeIn>
               <p>
-                Pact put a senior full stack engineer on the job. The sprint
+                Fourfold put a senior full stack engineer on the job. The sprint
                 kicked off on a Monday. Two weeks later, Whitney had Planorize,
                 a custom app that replaced her entire six-platform workflow.
               </p>
