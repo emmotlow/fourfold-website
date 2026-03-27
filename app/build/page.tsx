@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import Accordion from "@/components/Accordion";
@@ -70,48 +71,58 @@ export default function BuildPage() {
   return (
     <>
       {/* ── Section 1: Hero (Navy Dark) ── */}
-      <section className="relative bg-navy-dark text-white overflow-hidden grain">
+      <section className="relative bg-navy-dark text-white overflow-hidden">
+        <div className="grain absolute inset-0" />
         <div className="absolute inset-0">
           <div className="absolute top-20 -left-8 w-72 h-72 rounded-full border border-white/[0.04] animate-float" />
           <div className="absolute top-1/3 right-0 w-96 h-96 rounded-full bg-gold/[0.06] blur-[100px]" />
           <div className="absolute bottom-16 left-1/4 w-40 h-40 rounded-full border border-gold/[0.08] animate-float-slow" />
         </div>
+        {/* Centered illustration */}
+        <div className="absolute inset-0 z-[5] pointer-events-none">
+          <Image
+            src="/hero-build.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.35]"
+            priority
+          />
+        </div>
 
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 lg:py-36 relative z-10">
           <FadeIn>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-[5rem] font-bold leading-[0.95] tracking-tight mb-8">
-              You did the hard part.
-              <br />
-              Now let&rsquo;s build the real thing.
-            </h1>
-          </FadeIn>
-          <FadeIn delay={200}>
-            <p className="text-lg md:text-xl text-blue-200/70 max-w-2xl leading-relaxed mb-12">
-              Fourfold turns your existing work, wireframes, Bubble apps, Figma
-              files, or even a napkin sketch, into a production-grade product in
-              two weeks for $5K.
-            </p>
-          </FadeIn>
-          <FadeIn delay={350}>
-            <Link
-              href="#contact"
-              className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
-            >
-              Tell Us What You&rsquo;ve Built So Far
-              <svg
-                className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 max-w-2xl shadow-xl">
+              <h1 className="font-display text-4xl md:text-6xl lg:text-[5rem] font-bold leading-[0.95] tracking-tight mb-6 text-navy-dark">
+                You did the hard part.
+              </h1>
+              <p className="font-display text-2xl md:text-3xl text-navy/70 mb-8">
+                Now let&rsquo;s build the real thing.
+              </p>
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-12">
+                Fourfold turns your existing work, wireframes, Bubble apps, Figma
+                files, or even a napkin sketch, into a production-grade product in
+                two weeks for $5K.
+              </p>
+              <Link
+                href="#contact"
+                className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </Link>
+                Tell Us What You&rsquo;ve Built So Far
+                <svg
+                  className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+            </div>
           </FadeIn>
         </div>
       </section>
