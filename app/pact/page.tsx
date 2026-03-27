@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import { PactLayerCards } from "@/components/PactClient";
@@ -19,38 +20,46 @@ export default function PactPage() {
   return (
     <>
       {/* ── Section 1: Hero (Navy Dark) ── */}
-      <section className="relative bg-navy-dark text-white overflow-hidden grain">
+      <section className="relative bg-navy-dark text-white overflow-hidden">
+        <div className="grain absolute inset-0" />
         <div className="absolute inset-0">
-          <div className="absolute top-12 right-16 w-48 h-48 rounded-full border border-white/[0.04] animate-float" />
+          <div className="absolute top-12 left-16 w-48 h-48 rounded-full border border-white/[0.04] animate-float" />
           <div className="absolute bottom-16 left-20 w-32 h-32 rounded-full border border-gold/[0.08] animate-float-slow" />
-          <div className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full bg-gold/[0.04] blur-[100px]" />
+          <div className="absolute top-1/3 left-1/3 w-96 h-96 rounded-full bg-gold/[0.04] blur-[100px]" />
         </div>
+        {/* Centered illustration */}
+        <div className="absolute inset-0 z-[5] pointer-events-none">
+          <Image
+            src="/hero-pact.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.35]"
+            priority
+          />
+        </div>
+
         <div className="max-w-6xl mx-auto px-6 py-28 md:py-40 relative z-10">
           <FadeIn>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight mb-6">
-              Fourfold runs on{" "}
-              <span className="text-gold">Pact.</span>
-            </h1>
-          </FadeIn>
-          <FadeIn delay={100}>
-            <p className="font-display text-xl md:text-2xl text-blue-200/80 mb-6 max-w-2xl">
-              An agentic software factory that continuously builds software
-              for your team.
-            </p>
-          </FadeIn>
-          <FadeIn delay={200}>
-            <p className="text-lg text-blue-200/60 max-w-2xl leading-relaxed mb-6">
-              Pact is a coordinated system of AI agents, senior engineers, and
-              organizational knowledge that continuously produces software
-              tailored to your company.
-            </p>
-          </FadeIn>
-          <FadeIn delay={300}>
-            <p className="text-lg text-blue-200/60 max-w-2xl leading-relaxed">
-              You don&rsquo;t manage the factory. You don&rsquo;t even see most
-              of it. You just see the result: working software, delivered fast,
-              built to your standards.
-            </p>
+            <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 max-w-2xl shadow-xl">
+              <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight mb-6 text-navy-dark">
+                Fourfold runs on{" "}
+                <span className="text-gold-dark">Pact.</span>
+              </h1>
+              <p className="font-display text-xl md:text-2xl text-navy/80 mb-6">
+                An agentic software factory that continuously builds software
+                for your team.
+              </p>
+              <p className="text-lg text-slate-600 leading-relaxed mb-6">
+                Pact is a coordinated system of AI agents, senior engineers, and
+                organizational knowledge that continuously produces software
+                tailored to your company.
+              </p>
+              <p className="text-lg text-slate-600 leading-relaxed">
+                You don&rsquo;t manage the factory. You don&rsquo;t even see most
+                of it. You just see the result: working software, delivered fast,
+                built to your standards.
+              </p>
+            </div>
           </FadeIn>
         </div>
       </section>

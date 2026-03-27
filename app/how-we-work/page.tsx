@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import {
@@ -50,11 +51,22 @@ export default function HowWeWork() {
       />
 
       {/* ── Section 1: Hero (Navy Dark) ── */}
-      <section className="relative bg-navy-dark text-white overflow-hidden grain">
+      <section className="relative bg-navy-dark text-white overflow-hidden">
+        <div className="grain absolute inset-0" />
         <div className="absolute inset-0">
           <div className="absolute top-12 right-16 w-48 h-48 rounded-full border border-white/[0.04] animate-float" />
           <div className="absolute bottom-16 left-20 w-32 h-32 rounded-full border border-gold/[0.08] animate-float-slow" />
           <div className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full bg-gold/[0.04] blur-[100px]" />
+        </div>
+        {/* Background illustration */}
+        <div className="absolute inset-0 z-[5] pointer-events-none -top-20">
+          <Image
+            src="/hero-how-we-work.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.35]"
+            priority
+          />
         </div>
         <div className="max-w-6xl mx-auto px-6 py-28 md:py-40 relative z-10">
           <FadeIn>
@@ -64,34 +76,14 @@ export default function HowWeWork() {
               <span className="text-gold">reckless.</span>
             </h1>
           </FadeIn>
-          <FadeIn delay={150}>
-            <p className="text-lg md:text-xl text-blue-200/70 max-w-2xl leading-relaxed mb-10">
-              Fourfold delivers working products in two weeks by combining senior
-              engineers who&rsquo;ve mastered AI-assisted development with an
-              agentic software factory customized for your business.
-            </p>
-          </FadeIn>
-          <FadeIn delay={300}>
-            <Link
-              href="/#contact"
-              className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
-            >
-              Tell Us Your Idea
-              <svg
-                className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </Link>
-          </FadeIn>
+          <div className="mt-28 md:mt-52 lg:mt-64">
+            <FadeIn delay={450}>
+              <p className="text-lg md:text-xl text-blue-200/50 border-l-2 border-gold/40 pl-4 max-w-3xl leading-relaxed">
+                Fourfold delivers working products in two weeks by combining senior
+                engineers who&rsquo;ve mastered AI-assisted development with an agentic software factory customized for your business.
+              </p>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
