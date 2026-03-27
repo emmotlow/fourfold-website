@@ -158,7 +158,7 @@ export default function HowWeWork() {
               },
               {
                 title: "A software factory that coordinates everything.",
-                body: "The factory tracks progress, detects risks, routes decisions, manages quality gates, and keeps your team informed, all automatically.",
+                body: "Pact tracks progress, detects risks, routes decisions, manages quality gates, and keeps your team informed, all automatically.",
               },
               {
                 title: "Your second engagement is faster than your first.",
