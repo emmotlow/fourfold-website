@@ -227,7 +227,7 @@ export default function Home() {
             alt=""
             width={2378}
             height={1596}
-            className="w-[80%] max-w-3xl h-auto opacity-[0.15]"
+            className="w-full md:w-[80%] max-w-3xl h-auto opacity-[0.15]"
           />
         </div>
         <div className="max-w-3xl mx-auto px-6 relative z-10">
