@@ -62,8 +62,8 @@ export default function HowWeWork() {
           <FadeIn delay={150}>
             <p className="text-lg md:text-xl text-blue-200/70 max-w-2xl leading-relaxed mb-10">
               Fourfold delivers working products in two weeks by combining senior
-              engineers who&rsquo;ve mastered AI-assisted development with custom
-              AI agents based on your business context.
+              engineers who&rsquo;ve mastered AI-assisted development with an
+              agentic software factory customized for your business.
             </p>
           </FadeIn>
           <FadeIn delay={300}>
