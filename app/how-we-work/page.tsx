@@ -76,12 +76,14 @@ export default function HowWeWork() {
               <span className="text-gold">reckless.</span>
             </h1>
           </FadeIn>
-          <div className="mt-28 md:mt-52 lg:mt-64">
+          <div className="mt-16 md:mt-52 lg:mt-64">
             <FadeIn delay={450}>
-              <p className="text-lg md:text-xl text-blue-200/50 border-l-2 border-gold/40 pl-4 max-w-3xl leading-relaxed">
-                Fourfold delivers working products in two weeks by combining senior
-                engineers who&rsquo;ve mastered AI-assisted development with an agentic software factory customized for your business.
-              </p>
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 md:p-8 max-w-3xl shadow-lg border-l-4 border-gold">
+                <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
+                  Fourfold delivers working products in two weeks by combining senior
+                  engineers who&rsquo;ve mastered AI-assisted development with an agentic software factory customized for your business.
+                </p>
+              </div>
             </FadeIn>
           </div>
         </div>
