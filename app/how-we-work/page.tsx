@@ -162,7 +162,7 @@ export default function HowWeWork() {
               },
               {
                 title: "Your second engagement is faster than your first.",
-                body: "Pact learns your organization: approval chains, security requirements, compliance needs, team preferences. That knowledge compounds.",
+                body: "Our system learns your organization: approval chains, security requirements, compliance needs, team preferences. That knowledge compounds.",
               },
               {
                 title: "Outcome-based pricing.",
