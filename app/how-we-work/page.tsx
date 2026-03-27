@@ -116,7 +116,7 @@ export default function HowWeWork() {
               {
                 step: "3",
                 title: "We build it.",
-                body: "Senior engineers build your product on Pact, your agentic software factory. AI agents handle the production work. Engineers handle the architecture and quality. The factory handles the coordination, tracking, and risk detection.",
+                body: "AI agents handle the production work. Senior engineers handle the architecture and quality. The factory handles the coordination, tracking, and risk detection.",
               },
               {
                 step: "4",
