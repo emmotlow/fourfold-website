@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import TallyEmbed from "@/components/TallyEmbed";
@@ -93,12 +94,23 @@ export default function Home() {
       />
 
       {/* ── Section 1: Hero (Navy Dark) ── */}
-      <section className="relative bg-navy-dark text-white overflow-hidden grain">
+      <section className="relative bg-navy-dark text-white overflow-hidden">
+        <div className="grain absolute inset-0" />
         <div className="absolute inset-0">
           <div className="absolute top-20 -left-8 w-72 h-72 rounded-full border border-white/[0.04] animate-float" />
           <div className="absolute top-1/3 right-0 w-96 h-96 rounded-full bg-gold/[0.06] blur-[100px]" />
           <div className="absolute bottom-16 left-1/4 w-40 h-40 rounded-full border border-gold/[0.08] animate-float-slow" />
           <div className="absolute top-1/2 right-1/3 w-24 h-24 rounded-full border border-white/[0.03] animate-float" />
+        </div>
+        {/* Background illustration */}
+        <div className="absolute inset-0 z-[5] pointer-events-none">
+          <Image
+            src="/hero-factory.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.35]"
+            priority
+          />
         </div>
 
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 lg:py-36 relative z-10">
@@ -111,40 +123,35 @@ export default function Home() {
               <span className="text-gold">Two weeks.</span>
             </h1>
           </FadeIn>
-          <FadeIn delay={150}>
-            <p className="text-lg md:text-xl text-blue-200/70 max-w-2xl leading-relaxed mb-12">
-              Fourfold builds working software products in two weeks for $5K. You
-              bring the market expertise. We bring an agentic software factory
-              that turns it into enterprise-grade software.
-            </p>
-          </FadeIn>
-          <FadeIn delay={300}>
-            <Link
-              href="#contact"
-              className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
-            >
-              Tell Us Your Idea
-              <svg
-                className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+          <div className="mt-20 md:mt-44 lg:mt-56">
+            <FadeIn delay={300}>
+              <Link
+                href="#contact"
+                className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </Link>
-          </FadeIn>
-          <FadeIn delay={450}>
-            <p className="mt-10 text-base text-blue-200/50 border-l-2 border-gold/40 pl-4 max-w-lg">
-              We recently helped a client go from kickoff to working demo in 4
-              days. By week 2, they were onboarding customers.
-            </p>
-          </FadeIn>
+                Tell Us Your Idea
+                <svg
+                  className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+            </FadeIn>
+            <FadeIn delay={450}>
+              <p className="mt-10 text-lg md:text-xl text-blue-200/50 border-l-2 border-gold/40 pl-4 max-w-3xl leading-relaxed">
+                Fourfold builds working software products in two weeks for $5K.
+                You bring the market expertise. We bring an agentic software factory that turns it into enterprise-grade software.
+              </p>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
