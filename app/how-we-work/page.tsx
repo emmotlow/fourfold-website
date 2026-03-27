@@ -158,15 +158,15 @@ export default function HowWeWork() {
               },
               {
                 title: "A software factory that coordinates everything.",
-                body: "Every engagement runs on Pact, your agentic software factory. The factory tracks progress, detects risks, routes decisions, manages quality gates, and keeps your team informed, all automatically.",
+                body: "The factory tracks progress, detects risks, routes decisions, manages quality gates, and keeps your team informed, all automatically.",
               },
               {
                 title: "Your second engagement is faster than your first.",
-                body: "Pact learns your organization: approval chains, security requirements, compliance needs, team preferences. That knowledge compounds. Contractors start fresh every time. Pact remembers.",
+                body: "Pact learns your organization: approval chains, security requirements, compliance needs, team preferences. That knowledge compounds.",
               },
               {
                 title: "Outcome-based pricing.",
-                body: "$5K for a working product. We charge for the engagement, not hours. Our incentive is to deliver, not to extend.",
+                body: "$5K for a working product. We charge for the outcome, not hours. Our incentive is to deliver, not to extend.",
               },
             ].map((item, i) => (
               <FadeIn key={item.title} delay={i * 100}>
