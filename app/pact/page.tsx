@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import { PactLayerCards } from "@/components/PactClient";
 
 export const metadata: Metadata = {
   title: "Your Agentic Software Factory | Pact by Fourfold.ai",
@@ -62,34 +63,7 @@ export default function PactPage() {
               Three layers. One system.
             </h2>
           </FadeIn>
-          <div className="space-y-6">
-            {[
-              {
-                title: "AI Agents",
-                body: "Pact's agents handle the production work. They spec features, write code, run tests, conduct reviews, generate documentation, and manage deployments. Each agent is purpose-built for its role. Together, they produce the volume of output that used to require a full engineering team.",
-              },
-              {
-                title: "Coordination Engine",
-                body: "Agents alone aren't enough. Pact routes work through quality gates, manages approval workflows, sequences dependencies, and surfaces risks before they become blockers. It integrates with your existing tools and meets your team where they already work.",
-              },
-              {
-                title: "Institutional Memory",
-                body: "This is what separates Pact from a collection of AI tools. Every engagement builds a model of your organization: your approval chains, compliance requirements, data structures, security standards, and team preferences. That model persists and improves. Your second engagement is faster than your first. Your third is faster still.",
-              },
-            ].map((item, i) => (
-              <FadeIn key={item.title} delay={i * 120}>
-                <div className="bg-sand p-8 rounded-2xl border border-slate-200/80">
-                  <div className="w-8 h-0.5 bg-gold mb-5" />
-                  <h3 className="font-display text-xl font-bold text-navy mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    {item.body}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <PactLayerCards />
           <FadeIn delay={400}>
             <p className="text-lg text-slate-600 leading-relaxed mt-12 text-center">
               Read about Outcome-Driven Management (ODM), the operating
@@ -100,11 +74,11 @@ export default function PactPage() {
             <div className="mt-8 text-center">
               <Link
                 href="/blog/outcome-driven-management"
-                className="inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
+                className="group inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
               >
                 More on ODM
                 <svg
-                  className="ml-2 w-5 h-5"
+                  className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -152,11 +126,11 @@ export default function PactPage() {
           <FadeIn delay={300}>
             <Link
               href="/#contact"
-              className="inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
+              className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
             >
               Tell Us Your Idea
               <svg
-                className="ml-2 w-5 h-5"
+                className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

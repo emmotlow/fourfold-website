@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import {
+  DifferentiatorCards,
+  DeliverablesList,
+  ProcessTimeline,
+} from "@/components/HowWeWorkClient";
 
 export const metadata: Metadata = {
   title: "How We Work | Fourfold.ai Software Factory",
@@ -69,11 +74,11 @@ export default function HowWeWork() {
           <FadeIn delay={300}>
             <Link
               href="/#contact"
-              className="inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
+              className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
             >
               Tell Us Your Idea
               <svg
-                className="ml-2 w-5 h-5"
+                className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -98,47 +103,7 @@ export default function HowWeWork() {
               How It Works
             </h2>
           </FadeIn>
-
-          <div className="relative">
-            <div className="absolute left-5 top-0 bottom-0 w-px bg-slate-200" />
-
-            {[
-              {
-                step: "1",
-                title: "Tell us your idea.",
-                body: "Not a business plan. Just the problem you\u2019re solving, who it\u2019s for, and what \u201Cworking\u201D looks like.",
-              },
-              {
-                step: "2",
-                title: "We scope it together.",
-                body: "Within 48 hours, we define the MVP: the smallest version of your product that proves the concept.",
-              },
-              {
-                step: "3",
-                title: "We build it.",
-                body: "AI agents handle the production work. Senior engineers handle the architecture and quality. The factory handles the coordination, tracking, and risk detection.",
-              },
-              {
-                step: "4",
-                title: "You decide what\u2019s next.",
-                body: "Two weeks later, you have a functional product you can demo, test with customers, or show investors. We deliver a technical roadmap so you know exactly where to go from here.",
-              },
-            ].map((item, i) => (
-              <FadeIn key={item.step} delay={i * 120}>
-                <div className="relative flex gap-6 pb-14 last:pb-0">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold text-navy-dark flex items-center justify-center font-display font-bold text-lg relative z-10 shadow-md shadow-gold/20">
-                    {item.step}
-                  </div>
-                  <div className="pt-1">
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-600 leading-relaxed">{item.body}</p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <ProcessTimeline />
         </div>
       </section>
 
@@ -150,36 +115,7 @@ export default function HowWeWork() {
               Why Fourfold delivers differently.
             </h2>
           </FadeIn>
-          <div className="grid sm:grid-cols-2 gap-6">
-            {[
-              {
-                title: "Engineers who\u2019ve mastered AI development.",
-                body: "Our senior engineers don\u2019t use AI as autocomplete. They\u2019ve mastered how to structure code properly, prevent hallucination-related bugs, and use AI tools to produce enterprise-grade output.",
-              },
-              {
-                title: "A software factory that coordinates everything.",
-                body: "Pact tracks progress, detects risks, routes decisions, manages quality gates, and keeps your team informed, all automatically.",
-              },
-              {
-                title: "Your second engagement is faster than your first.",
-                body: "Our system learns your organization: approval chains, security requirements, compliance needs, team preferences. That knowledge compounds.",
-              },
-              {
-                title: "Outcome-based pricing.",
-                body: "$5K for a working product. We charge for the outcome, not hours. Our incentive is to deliver, not to extend.",
-              },
-            ].map((item, i) => (
-              <FadeIn key={item.title} delay={i * 100}>
-                <div className="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
-                  <div className="w-8 h-0.5 bg-gold mb-5" />
-                  <h3 className="font-bold text-navy mb-3">{item.title}</h3>
-                  <p className="text-slate-600 leading-relaxed text-sm">
-                    {item.body}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <DifferentiatorCards />
         </div>
       </section>
 
@@ -191,33 +127,7 @@ export default function HowWeWork() {
               What you walk away with.
             </h2>
           </FadeIn>
-          <FadeIn delay={100}>
-            <ul className="space-y-4 text-lg text-slate-600">
-              {[
-                "A working product that real users can interact with",
-                "Full code ownership, your IP, no lock-in",
-                "A technical roadmap with clear documentation of what was built, how it\u2019s structured, and where to go next",
-                "A software factory that already knows your business via Pact",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <svg
-                    className="w-5 h-5 text-gold flex-shrink-0 mt-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span className="leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </FadeIn>
+          <DeliverablesList />
         </div>
       </section>
 
@@ -235,11 +145,11 @@ export default function HowWeWork() {
           <FadeIn delay={150}>
             <Link
               href="/#contact"
-              className="inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
+              className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
             >
               Tell Us Your Idea
               <svg
-                className="ml-2 w-5 h-5"
+                className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

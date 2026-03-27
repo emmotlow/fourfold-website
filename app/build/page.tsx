@@ -3,6 +3,7 @@ import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import Accordion from "@/components/Accordion";
 import BuildTallyEmbed from "@/components/BuildTallyEmbed";
+import { PainPointCards, BuildProcessStrip } from "@/components/BuildClient";
 
 export const metadata: Metadata = {
   title: "Build Your MVP in Two Weeks for $5K | Fourfold",
@@ -65,29 +66,6 @@ const faqItems = [
   },
 ];
 
-const steps = [
-  {
-    step: "1",
-    label: "Tell us what you've got.",
-    detail: "A few sentences and a screenshot. That's it.",
-  },
-  {
-    step: "2",
-    label: "We scope the MVP.",
-    detail: "48 hours. You'll know the $5K scope.",
-  },
-  {
-    step: "3",
-    label: "We build it.",
-    detail: "Senior engineers. AI speed. Two weeks.",
-  },
-  {
-    step: "4",
-    label: "You own a working product.",
-    detail: "Code, deployment, documentation. All yours.",
-  },
-];
-
 export default function BuildPage() {
   return (
     <>
@@ -117,11 +95,11 @@ export default function BuildPage() {
           <FadeIn delay={350}>
             <Link
               href="#contact"
-              className="inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
+              className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
             >
               Tell Us What You&rsquo;ve Built So Far
               <svg
-                className="ml-2 w-5 h-5"
+                className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -152,21 +130,7 @@ export default function BuildPage() {
               Sound familiar?
             </h2>
           </FadeIn>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {[
-              "I built it in Bubble, but it's too slow to scale.",
-              "I used Cursor/Lovable/Bolt, but I'm stuck.",
-              "I hired a freelancer and got burned.",
-            ].map((text, i) => (
-              <FadeIn key={i} delay={i * 120}>
-                <div className="border-l-4 border-gold bg-sand rounded-r-2xl p-8 h-full flex items-center">
-                  <p className="font-display text-lg font-bold text-slate-900 leading-snug">
-                    &ldquo;{text}&rdquo;
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <PainPointCards />
         </div>
       </section>
 
@@ -215,37 +179,16 @@ export default function BuildPage() {
               You&rsquo;ve already tried. Now let&rsquo;s actually build it.
             </p>
           </FadeIn>
-          <div className="grid md:grid-cols-4 gap-8 md:gap-6 relative">
-            {/* Connecting line (desktop only) */}
-            <div className="hidden md:block absolute top-5 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-px bg-gold/30" />
-            {/* Connecting line (mobile only) */}
-            <div className="md:hidden absolute left-5 top-0 bottom-0 w-px bg-gold/30" />
-
-            {steps.map((item, i) => (
-              <FadeIn key={item.step} delay={i * 100}>
-                <div className="relative flex md:flex-col md:items-center md:text-center gap-5 md:gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold text-navy-dark flex items-center justify-center font-display font-bold text-lg relative z-10 shadow-md shadow-gold/20">
-                    {item.step}
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-slate-900 mb-1">
-                      {item.label}
-                    </h3>
-                    <p className="text-sm text-slate-500">{item.detail}</p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <BuildProcessStrip />
           <FadeIn delay={450}>
             <div className="mt-12 text-center">
               <Link
                 href="#contact"
-                className="inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
+                className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
               >
                 Tell Us Your Idea
                 <svg
-                  className="ml-2 w-5 h-5"
+                  className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

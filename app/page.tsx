@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import TallyEmbed from "@/components/TallyEmbed";
+import HomeClient from "@/components/HomeClient";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -120,11 +121,11 @@ export default function Home() {
           <FadeIn delay={300}>
             <Link
               href="#contact"
-              className="inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
+              className="group inline-flex items-center bg-gold text-navy-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
             >
               Tell Us Your Idea
               <svg
-                className="ml-2 w-5 h-5"
+                className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -147,7 +148,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Section 2: Why You (White) ── */}
+      {/* ── Section 2: Stats Bar (White) ── */}
+      <HomeClient />
+
+      {/* ── Section 3: Why You (White) ── */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-3xl mx-auto px-6">
           <FadeIn>
@@ -170,11 +174,11 @@ export default function Home() {
             <div className="mt-10">
               <Link
                 href="/how-we-work"
-                className="inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
+                className="group inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
               >
                 See How We Build
                 <svg
-                  className="ml-2 w-5 h-5"
+                  className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -192,7 +196,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Section 3: Why Us (Sand) ── */}
+      {/* ── Section 4: Why Us (Sand) ── */}
       <section className="py-24 md:py-32 bg-sand">
         <div className="max-w-3xl mx-auto px-6">
           <FadeIn>
@@ -222,11 +226,11 @@ export default function Home() {
             <div className="mt-10">
               <Link
                 href="/pact"
-                className="inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
+                className="group inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
               >
                 Meet the Platform
                 <svg
-                  className="ml-2 w-5 h-5"
+                  className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -244,7 +248,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Section 4: Who It's For (White) ── */}
+      {/* ── Section 5: Who It's For (White) — with icons + motion cards ── */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <FadeIn>
@@ -253,37 +257,11 @@ export default function Home() {
               department.
             </h2>
           </FadeIn>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Teams without engineering bandwidth.",
-                body: "Your marketing, sales, HR, or ops team knows exactly what tool they need. They just can\u2019t get on the engineering roadmap. Fourfold + Pact helps them ship without waiting.",
-              },
-              {
-                title: "Founders and solopreneurs.",
-                body: "You want to ship a real product, not a slide deck. Fourfold gives you production-grade engineering capacity without hiring a team.",
-              },
-              {
-                title: "Companies that keep building.",
-                body: "You don\u2019t need one app. You need an ongoing ability to turn ideas into working software. Pact compounds knowledge across engagements, so every engagement builds on the last.",
-              },
-            ].map((item, i) => (
-              <FadeIn key={item.title} delay={i * 100}>
-                <div className="bg-sand p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
-                  <h3 className="font-display text-lg font-bold text-slate-900 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed text-sm">
-                    {item.body}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <HomeClient section="cards" />
         </div>
       </section>
 
-      {/* ── Section 5: Tally Form (Navy Dark) ── */}
+      {/* ── Section 6: Tally Form (Navy Dark) ── */}
       <section
         id="contact"
         className="py-24 md:py-32 bg-navy-dark grain text-white overflow-hidden"
