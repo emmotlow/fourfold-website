@@ -160,25 +160,40 @@ export default function Home() {
 
       {/* ── Section 3: Why You (White) ── */}
       <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-3xl mx-auto px-6">
-          <FadeIn>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-tight">
-              You already have the hardest part figured out.
-            </h2>
-          </FadeIn>
-          <div className="text-lg text-slate-600 leading-relaxed space-y-6">
-            <FadeIn delay={100}>
-              <p>
-                The best products don&rsquo;t come from people who know how to
-                code. They come from people who deeply understand a problem.
-                You&rsquo;ve done the research. You know what needs to exist. You
-                just need a team that can build it without burning six months and
-                six figures to find out if it works.
-              </p>
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-12">
+            {/* Illustration */}
+            <FadeIn className="hidden md:block flex-shrink-0">
+              <Image
+                src="/why-you-lightbulb.png"
+                alt="Lightbulb with circuit board pattern"
+                width={300}
+                height={300}
+                className="w-56 lg:w-72 h-auto"
+              />
             </FadeIn>
+            {/* Text */}
+            <div>
+              <FadeIn>
+                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-tight">
+                  You already have the hardest part figured out.
+                </h2>
+              </FadeIn>
+              <div className="text-lg text-slate-600 leading-relaxed space-y-6">
+                <FadeIn delay={100}>
+                  <p>
+                    The best products don&rsquo;t come from people who know how to
+                    code. They come from people who deeply understand a problem.
+                    You&rsquo;ve done the research. You know what needs to exist. You
+                    just need a team that can build it without burning six months and
+                    six figures to find out if it works.
+                  </p>
+                </FadeIn>
+              </div>
+            </div>
           </div>
           <FadeIn delay={200}>
-            <div className="mt-10">
+            <div className="mt-10 text-center">
               <Link
                 href="/how-we-work"
                 className="group inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
