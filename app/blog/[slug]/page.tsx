@@ -20,10 +20,10 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: `${post.title} — Fourfold.ai`,
+    title: `${post.title} | Fourfold.ai`,
     description: post.excerpt,
     openGraph: {
-      title: `${post.title} — Fourfold.ai`,
+      title: `${post.title} | Fourfold.ai`,
       description: post.excerpt,
       url: `https://fourfold.ai/blog/${post.slug}`,
       type: "article",

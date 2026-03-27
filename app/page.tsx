@@ -21,10 +21,10 @@ const organizationSchema = {
 const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Fourfold.ai — Your idea. Our engineering. A working product in two weeks.",
+  name: "Fourfold.ai | Your Agentic Software Factory",
   url: "https://fourfold.ai",
   description:
-    "Fourfold builds working software products in two weeks for $5K. Senior engineers at AI speed, custom AI agents for coordination, outcome-based pricing.",
+    "Working software products in two weeks for $5K. Fourfold's agentic software factory coordinates AI agents and senior engineers to build enterprise-grade products fast.",
   dateModified: "2026-03-20",
 };
 
@@ -105,7 +105,7 @@ export default function Home() {
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] font-bold leading-[0.95] tracking-tight mb-8">
               Your idea.
               <br />
-              Our engineering.
+              Our software factory.
               <br />
               <span className="text-gold">Two weeks.</span>
             </h1>
@@ -113,8 +113,8 @@ export default function Home() {
           <FadeIn delay={150}>
             <p className="text-lg md:text-xl text-blue-200/70 max-w-2xl leading-relaxed mb-12">
               Fourfold builds working software products in two weeks for $5K. You
-              bring the market expertise. We bring a production system that turns
-              it into enterprise-grade software.
+              bring the market expertise. We bring an agentic software factory
+              that turns it into enterprise-grade software.
             </p>
           </FadeIn>
           <FadeIn delay={300}>
@@ -197,21 +197,21 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-6">
           <FadeIn>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-tight">
-              A production system, not a dev shop.
+              A software factory, not a dev shop.
             </h2>
           </FadeIn>
           <div className="text-lg text-slate-600 leading-relaxed space-y-6">
             <FadeIn delay={100}>
               <p>
                 Fourfold isn&rsquo;t a freelancer with AI tools. Every engagement
-                runs on Pact, a coordination platform that orchestrates AI agents,
-                senior engineers, and your team&rsquo;s context into a single
-                delivery pipeline.
+                runs on Pact, an agentic software factory that coordinates AI
+                agents, senior engineers, and your team&rsquo;s context into a
+                single delivery pipeline.
               </p>
             </FadeIn>
             <FadeIn delay={200}>
               <p>
-                The agents build. The engineers make judgment calls. The platform
+                The agents build. The engineers make judgment calls. The factory
                 handles coordination, quality gates, and approvals. And it learns
                 your organization, so every engagement is faster and more precise
                 than the last.

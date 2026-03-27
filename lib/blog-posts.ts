@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-20",
     author: "Fourfold.ai",
     excerpt:
-      "We built Pact on a simple conviction: management should measure what matters, not what's easy to count. Here's how Outcome-Driven Management works, and why it matters more now than ever.",
+      "ODM makes outcomes, not tasks, the atomic unit of work. The operating framework behind Pact, Fourfold's agentic software factory.",
   },
 ];
 

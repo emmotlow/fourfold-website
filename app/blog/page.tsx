@@ -4,13 +4,13 @@ import FadeIn from "@/components/FadeIn";
 import { blogPosts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
-  title: "Blog — Fourfold.ai",
+  title: "Blog | Fourfold.ai",
   description:
-    "Thought leadership from Fourfold. How we think about AI-powered software delivery, outcome-driven management, and building products that matter.",
+    "Thought leadership on agentic software factories, AI-powered delivery, and the future of services from the Fourfold team.",
   openGraph: {
-    title: "Blog — Fourfold.ai",
+    title: "Blog | Fourfold.ai",
     description:
-      "Thought leadership from Fourfold. How we think about AI-powered software delivery, outcome-driven management, and building products that matter.",
+      "Thought leadership on agentic software factories, AI-powered delivery, and the future of services from the Fourfold team.",
     url: "https://fourfold.ai/blog",
   },
 };

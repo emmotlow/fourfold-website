@@ -3,13 +3,13 @@ import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
-  title: "The Platform — Fourfold.ai",
+  title: "Your Agentic Software Factory | Pact by Fourfold.ai",
   description:
-    "Pact is the production system behind Fourfold. AI agents, coordination, and institutional memory in one delivery pipeline.",
+    "Pact is an agentic software factory: AI agents, a coordination engine, and institutional memory in one production system. Two weeks. Enterprise quality.",
   openGraph: {
-    title: "The Platform — Fourfold.ai",
+    title: "Your Agentic Software Factory | Pact by Fourfold.ai",
     description:
-      "Pact is the production system behind Fourfold. AI agents, coordination, and institutional memory in one delivery pipeline.",
+      "Pact is an agentic software factory: AI agents, a coordination engine, and institutional memory in one production system. Two weeks. Enterprise quality.",
     url: "https://fourfold.ai/pact",
   },
 };
@@ -27,27 +27,29 @@ export default function PactPage() {
         <div className="max-w-6xl mx-auto px-6 py-28 md:py-40 relative z-10">
           <FadeIn>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight mb-6">
-              Fourfold runs on{" "}
-              <span className="text-gold">Pact.</span>
+              Your Agentic{" "}
+              <span className="text-gold">Software Factory.</span>
             </h1>
           </FadeIn>
           <FadeIn delay={100}>
             <p className="font-display text-xl md:text-2xl text-blue-200/80 mb-6 max-w-2xl">
-              A production system for AI-powered software delivery.
+              Powered by Pact. A production system that continuously builds
+              software for your team.
             </p>
           </FadeIn>
           <FadeIn delay={200}>
             <p className="text-lg text-blue-200/60 max-w-2xl leading-relaxed mb-6">
-              Pact is what makes Fourfold possible. It&rsquo;s the coordination
-              platform that turns AI agents, senior engineers, and your
-              organizational context into a continuous delivery pipeline.
+              Pact is what makes Fourfold possible. It&rsquo;s an agentic
+              software factory: a coordinated system of AI agents, senior
+              engineers, and organizational knowledge that continuously produces
+              software tailored to your company.
             </p>
           </FadeIn>
           <FadeIn delay={300}>
             <p className="text-lg text-blue-200/60 max-w-2xl leading-relaxed">
-              You don&rsquo;t manage Pact. You don&rsquo;t even see most of it.
-              You just see the result: working software, delivered fast, built to
-              your standards.
+              You don&rsquo;t manage the factory. You don&rsquo;t even see most
+              of it. You just see the result: working software, delivered fast,
+              built to your standards.
             </p>
           </FadeIn>
         </div>

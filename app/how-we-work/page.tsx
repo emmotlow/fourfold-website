@@ -3,13 +3,13 @@ import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
-  title: "How We Work — Fourfold.ai",
+  title: "How We Work | Fourfold.ai Software Factory",
   description:
-    "Fourfold delivers working products in two weeks by combining senior engineers who've mastered AI-assisted development with Pact, a production system that handles coordination. $5K flat fee.",
+    "Senior engineers and AI agents build your product on Pact, an agentic software factory. See the two-week process, what you get, and why it's different.",
   openGraph: {
-    title: "How We Work — Fourfold.ai",
+    title: "How We Work | Fourfold.ai Software Factory",
     description:
-      "Fourfold delivers working products in two weeks by combining senior engineers who've mastered AI-assisted development with Pact, a production system that handles coordination. $5K flat fee.",
+      "Senior engineers and AI agents build your product on Pact, an agentic software factory. See the two-week process, what you get, and why it's different.",
     url: "https://fourfold.ai/how-we-work",
   },
 };
@@ -63,7 +63,7 @@ export default function HowWeWork() {
             <p className="text-lg md:text-xl text-blue-200/70 max-w-2xl leading-relaxed mb-10">
               Fourfold delivers working products in two weeks by combining senior
               engineers who&rsquo;ve mastered AI-assisted development with Pact,
-              a production system that handles the coordination.
+              an agentic software factory that handles the coordination.
             </p>
           </FadeIn>
           <FadeIn delay={300}>
@@ -116,7 +116,7 @@ export default function HowWeWork() {
               {
                 step: "3",
                 title: "We build it.",
-                body: "Senior engineers build your product on Pact. AI agents handle the production work. Engineers handle the architecture and quality. Pact handles the coordination, tracking, and risk detection.",
+                body: "Senior engineers build your product on Pact, your agentic software factory. AI agents handle the production work. Engineers handle the architecture and quality. The factory handles the coordination, tracking, and risk detection.",
               },
               {
                 step: "4",
@@ -157,8 +157,8 @@ export default function HowWeWork() {
                 body: "Our senior engineers don\u2019t use AI as autocomplete. They\u2019ve mastered how to structure code properly, prevent hallucination-related bugs, and use AI tools to produce enterprise-grade output.",
               },
               {
-                title: "A system that coordinates everything.",
-                body: "Every engagement runs on Pact. The platform tracks progress, detects risks, routes decisions, manages quality gates, and keeps your team informed, all automatically.",
+                title: "A software factory that coordinates everything.",
+                body: "Every engagement runs on Pact, your agentic software factory. The factory tracks progress, detects risks, routes decisions, manages quality gates, and keeps your team informed, all automatically.",
               },
               {
                 title: "Your second engagement is faster than your first.",
@@ -197,7 +197,7 @@ export default function HowWeWork() {
                 "A working product that real users can interact with",
                 "Full code ownership, your IP, no lock-in",
                 "A technical roadmap with clear documentation of what was built, how it\u2019s structured, and where to go next",
-                "A system that already knows your business via Pact",
+                "A software factory that already knows your business via Pact",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <svg

@@ -4,12 +4,13 @@ export default function BlogPostCTA() {
   return (
     <aside className="border-l-4 border-gold bg-sand rounded-r-2xl p-8 md:p-10 mt-16">
       <h3 className="font-display text-2xl font-bold text-slate-900 mb-4">
-        We&rsquo;re building this.
+        We built the factory.
       </h3>
       <p className="text-slate-600 leading-relaxed mb-6">
-        Fourfold is Pact&rsquo;s AI-managed consultancy. We deliver working
-        software products in two weeks for $5K, powered by the production system
-        described above. If you&rsquo;ve got an idea, tell us about it.
+        Fourfold runs on Pact, an agentic software factory that delivers
+        working software products in two weeks for $5K. You bring the idea. The
+        factory handles the rest. If you&rsquo;ve got something worth building,
+        tell us about it.
       </p>
       <Link
         href="/#contact"

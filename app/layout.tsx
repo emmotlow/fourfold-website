@@ -18,18 +18,18 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Fourfold.ai — Your idea. Our engineering. A working product in two weeks.",
+  title: "Fourfold.ai | Your Agentic Software Factory",
   description:
-    "Fourfold pairs your market expertise with senior engineers operating at AI speed. We build real, functional products — $5K, two weeks, a working product at the end.",
+    "Working software products in two weeks for $5K. Fourfold's agentic software factory coordinates AI agents and senior engineers to build enterprise-grade products fast.",
   metadataBase: new URL("https://fourfold.ai"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://fourfold.ai",
     siteName: "Fourfold.ai",
-    title: "Fourfold.ai — Your idea. Our engineering. A working product in two weeks.",
+    title: "Fourfold.ai | Your Agentic Software Factory",
     description:
-      "Fourfold builds working software products in two weeks for $5K. Senior engineers at AI speed, custom AI agents for coordination, outcome-based pricing.",
+      "Working software products in two weeks for $5K. Fourfold's agentic software factory coordinates AI agents and senior engineers to build enterprise-grade products fast.",
     images: [
       {
         url: "/og-image.png",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fourfold.ai — A working product in two weeks.",
+    title: "Fourfold.ai | Your Agentic Software Factory",
     description:
-      "Fourfold builds working software products in two weeks for $5K. Senior engineers at AI speed, custom AI agents for coordination, outcome-based pricing.",
+      "Working software products in two weeks for $5K. Fourfold's agentic software factory coordinates AI agents and senior engineers to build enterprise-grade products fast.",
     images: ["/og-image.png"],
   },
 };
