@@ -219,8 +219,18 @@ export default function Home() {
       </section>
 
       {/* ── Section 4: Why Us (Sand) ── */}
-      <section className="py-24 md:py-32 bg-sand">
-        <div className="max-w-3xl mx-auto px-6">
+      <section className="relative py-24 md:py-32 bg-sand overflow-hidden">
+        {/* Centered background illustration */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <Image
+            src="/software-factory-gears.png"
+            alt=""
+            width={2378}
+            height={1596}
+            className="w-[80%] max-w-3xl h-auto opacity-[0.15]"
+          />
+        </div>
+        <div className="max-w-3xl mx-auto px-6 relative z-10">
           <FadeIn>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-tight">
               A software factory, not a dev shop.
@@ -245,10 +255,10 @@ export default function Home() {
             </FadeIn>
           </div>
           <FadeIn delay={300}>
-            <div className="mt-10">
+            <div className="mt-10 text-center">
               <Link
                 href="/pact"
-                className="group inline-flex items-center border-2 border-navy text-navy px-7 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
+                className="group inline-flex items-center bg-navy text-white px-7 py-3 rounded-full font-semibold hover:bg-sand hover:text-navy border-2 border-navy transition-all duration-300"
               >
                 Meet the Platform
                 <svg
