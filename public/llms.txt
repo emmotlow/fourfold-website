@@ -1,21 +1,33 @@
 # Fourfold.ai
 
-> Fourfold is a lean engineering company that builds working software products in two weeks for $5K. We pair senior engineers operating at AI speed with custom Pact AI agents for project coordination. Our clients are aspiring entrepreneurs, small businesses, and family businesses who need a technical partner to move from idea to working MVP.
+> Fourfold is an AI-managed consultancy that builds enterprise-grade software products in two weeks for $5K. We combine senior engineers who've mastered AI-assisted development with Pact, an agentic software factory that coordinates AI agents, senior engineers, and your organization's context into a single delivery pipeline. Our clients are aspiring entrepreneurs, small businesses, and teams without engineering bandwidth who need a technical partner to move from idea to working product.
 
 ## Core offering
 
 - Outcome-based pricing: $5K flat fee, two-week delivery, working product at the end
 - Senior engineers who have mastered AI-assisted development (Claude Code, LLM orchestration, prompt engineering)
-- Custom Pact AI agents for real-time project coordination, risk detection, and stakeholder alignment
+- Pact: an agentic software factory that coordinates AI agents, senior engineers, and organizational knowledge into a single delivery pipeline
 - Senior human review on every line of AI-generated code for quality, security, and scalability
 - Full code ownership — your product, your codebase, your IP, no lock-in
+- Institutional memory: Pact learns your organization (approval chains, security requirements, compliance needs, team preferences) so every engagement is faster than the last
 
 ## Key URLs
 
 - Homepage: https://fourfold.ai/
 - How We Work: https://fourfold.ai/how-we-work
-- Outcome-Driven Management (ODM): https://fourfold.ai/outcome-driven-management
+- Pact (the platform): https://fourfold.ai/pact
+- Build page (for makers outgrowing no-code): https://fourfold.ai/build
+- Blog: https://fourfold.ai/blog
+- Outcome-Driven Management (ODM): https://fourfold.ai/blog/outcome-driven-management
+- Case Study — Planorize: https://fourfold.ai/blog/planorize
 - Contact form: https://fourfold.ai/#contact
+
+## Pact — The Agentic Software Factory
+
+Pact is the platform behind Fourfold. It has three layers:
+1. **AI Agents** — Purpose-built agents that spec features, write code, run tests, conduct reviews, generate documentation, and manage deployments.
+2. **Coordination Engine** — Routes work through quality gates, manages approval workflows, sequences dependencies, and surfaces risks before they become blockers.
+3. **Institutional Memory** — Every engagement builds a model of your organization. That model persists and improves. Your second engagement is faster than your first.
 
 ## Outcome-Driven Management (ODM)
 
@@ -23,9 +35,15 @@ ODM is Fourfold's management framework that makes outcomes, not tasks, the atomi
 
 ## Results
 
-- Production booking platform built in 50 hours, live and handling 1,000 daily users
-- Client went from kickoff to working demo in 4 days; onboarding alpha testers by week 2
-- Identity security company engagement delivered in half the expected time using Fourfold's lean delivery model and Pact's agentic outcome management platform
+- Planorize: Built a production booking platform in 2 weeks that another vendor quoted at 4 months. Saves 3–5 hours per organizer per week. — Whitney Elliott, Owner, Planorize
+- Client went from kickoff to working demo in 4 days; onboarding customers by week 2
+
+## Who Fourfold is for
+
+- Teams without engineering bandwidth who can't get on the engineering roadmap
+- Founders and solopreneurs who want to ship a real product, not a slide deck
+- Companies that need an ongoing ability to turn ideas into working software
+- Makers who outgrew their no-code tool (Bubble, Cursor, Lovable, Bolt)
 
 ## Contact
 
