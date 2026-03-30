@@ -20,6 +20,37 @@ const organizationSchema = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Fourfold",
+  image: "https://fourfold.ai/logo.png",
+  url: "https://fourfold.ai",
+  telephone: "",
+  description:
+    "Fourfold is an agentic software factory that builds working software products in two weeks for $5K. Senior engineers and AI agents deliver enterprise-grade MVPs.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "San Francisco",
+    addressRegion: "CA",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 37.7749,
+    longitude: -122.4194,
+  },
+  priceRange: "$5,000",
+  areaServed: "Worldwide",
+  serviceType: "Software Development",
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "18:00",
+  },
+};
+
 const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -80,6 +111,10 @@ const faqSchema = {
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
