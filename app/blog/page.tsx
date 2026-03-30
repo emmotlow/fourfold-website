@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import { blogPosts } from "@/lib/blog-posts";
@@ -19,10 +20,21 @@ export default function BlogIndex() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative bg-navy-dark text-white overflow-hidden grain">
+      <section className="relative bg-navy-dark text-white overflow-hidden">
+        <div className="grain absolute inset-0" />
         <div className="absolute inset-0">
           <div className="absolute top-16 right-20 w-40 h-40 rounded-full border border-white/[0.04] animate-float" />
           <div className="absolute bottom-12 left-1/4 w-64 h-64 rounded-full bg-gold/[0.04] blur-[80px]" />
+        </div>
+        {/* Background grid pattern */}
+        <div className="absolute inset-0 z-[5] pointer-events-none">
+          <Image
+            src="/blog-grid-pattern.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.5]"
+            priority
+          />
         </div>
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 relative z-10">
           <FadeIn>
