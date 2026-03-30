@@ -23,23 +23,39 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  serviceType: "MVP Software Development",
   name: "Fourfold MVP Development",
   provider: {
-    "@type": "Organization",
-    name: "Fourfold",
+    "@type": "LocalBusiness",
+    name: "Fourfold.ai",
     url: "https://fourfold.ai",
   },
   description:
-    "Two-week MVP development powered by senior engineers using AI-assisted development and Pact for project coordination. $5K flat fee, working product delivered.",
+    "Senior engineers operating at AI speed to build real, functional products from your market expertise.",
   offers: {
     "@type": "Offer",
-    price: "5000",
+    price: "5000.00",
     priceCurrency: "USD",
-    description: "Two-week MVP engagement with outcome-based pricing",
+    description: "A working product in two weeks for $5K.",
+    availability: "https://schema.org/InStock",
   },
-  serviceType: "Software Development",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "MVP Delivery",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "2-Week MVP Development",
+          description:
+            "Functional software including code ownership and a technical roadmap.",
+        },
+      },
+    ],
+  },
   areaServed: "Worldwide",
-  dateModified: "2026-03-20",
+  dateModified: "2026-03-30",
 };
 
 export default function HowWeWork() {
