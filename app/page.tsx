@@ -140,7 +140,7 @@ export default function Home() {
         {/* Background illustration */}
         <div className="absolute inset-0 z-[5] pointer-events-none">
           <Image
-            src="/hero-factory.png"
+            src="/hero-factory.webp"
             alt=""
             fill
             className="object-cover opacity-[0.35]"
@@ -200,7 +200,7 @@ export default function Home() {
             {/* Illustration */}
             <FadeIn className="hidden md:block flex-shrink-0">
               <Image
-                src="/why-you-lightbulb.png"
+                src="/why-you-lightbulb.webp"
                 alt="Lightbulb with circuit board pattern"
                 width={300}
                 height={300}
@@ -258,7 +258,7 @@ export default function Home() {
         {/* Centered background illustration */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <Image
-            src="/software-factory-gears.png"
+            src="/software-factory-gears.webp"
             alt=""
             width={2378}
             height={1596}

@@ -10,7 +10,7 @@ export default function PlanorizeContent() {
         {/* Background illustration */}
         <div className="absolute inset-0 pointer-events-none">
           <Image
-            src="/blog-planorize-calendar.png"
+            src="/blog-planorize-calendar.webp"
             alt=""
             fill
             className="object-cover opacity-[0.12] scale-125"

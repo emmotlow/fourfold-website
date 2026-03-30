@@ -30,7 +30,7 @@ export default function PactPage() {
         {/* Centered illustration */}
         <div className="absolute inset-0 z-[5] pointer-events-none">
           <Image
-            src="/hero-pact.png"
+            src="/hero-pact.webp"
             alt=""
             fill
             className="object-cover opacity-[0.35]"

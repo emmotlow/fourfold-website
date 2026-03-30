@@ -77,7 +77,7 @@ export default function HowWeWork() {
         {/* Background illustration */}
         <div className="absolute inset-0 z-[5] pointer-events-none -top-20">
           <Image
-            src="/hero-how-we-work.png"
+            src="/hero-how-we-work.webp"
             alt=""
             fill
             className="object-cover opacity-[0.35]"
@@ -150,7 +150,7 @@ export default function HowWeWork() {
         {/* Background mesh gradient */}
         <div className="absolute -inset-10 z-[5] pointer-events-none">
           <Image
-            src="/mesh-gradient.png"
+            src="/mesh-gradient.webp"
             alt=""
             fill
             className="object-cover opacity-[0.6] scale-110"

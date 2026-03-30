@@ -9,7 +9,7 @@ export default function BlogPostCTA() {
       {/* Background mesh gradient */}
       <div className="absolute -inset-10 z-[5] pointer-events-none">
         <Image
-          src="/mesh-gradient.png"
+          src="/mesh-gradient.webp"
           alt=""
           fill
           className="object-cover opacity-[0.6] scale-110"

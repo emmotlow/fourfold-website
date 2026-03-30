@@ -81,7 +81,7 @@ export default function BuildPage() {
         {/* Centered illustration */}
         <div className="absolute inset-0 z-[5] pointer-events-none">
           <Image
-            src="/hero-build.png"
+            src="/hero-build.webp"
             alt=""
             fill
             className="object-cover opacity-[0.35]"

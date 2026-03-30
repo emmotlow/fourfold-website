@@ -29,7 +29,7 @@ export default function BlogIndex() {
         {/* Background grid pattern */}
         <div className="absolute inset-0 z-[5] pointer-events-none">
           <Image
-            src="/blog-grid-pattern.png"
+            src="/blog-grid-pattern.webp"
             alt=""
             fill
             className="object-cover opacity-[0.5]"

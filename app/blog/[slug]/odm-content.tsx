@@ -9,7 +9,7 @@ export default function ODMContent() {
         {/* Background illustration */}
         <div className="absolute inset-0 pointer-events-none">
           <Image
-            src="/blog-odm-target.png"
+            src="/blog-odm-target.webp"
             alt=""
             fill
             className="object-cover opacity-[0.25] scale-150 -translate-x-[5%]"
