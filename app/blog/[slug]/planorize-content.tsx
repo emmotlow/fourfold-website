@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 
@@ -5,8 +6,17 @@ export default function PlanorizeContent() {
   return (
     <>
       {/* At a Glance */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-3xl mx-auto px-6">
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        {/* Background illustration */}
+        <div className="absolute inset-0 pointer-events-none">
+          <Image
+            src="/blog-planorize-calendar.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.12] scale-125"
+          />
+        </div>
+        <div className="max-w-3xl mx-auto px-6 relative z-10">
           <FadeIn>
             <div className="bg-sand border border-slate-200/80 rounded-2xl p-8 md:p-10">
               <p className="text-xs uppercase tracking-widest text-gold font-semibold mb-8">
