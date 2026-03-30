@@ -126,9 +126,19 @@ export default function HowWeWork() {
       </section>
 
       {/* ── Section 5: CTA (Navy Dark) ── */}
-      <section className="py-24 md:py-32 bg-navy-dark grain text-white text-center overflow-hidden">
+      <section className="relative py-24 md:py-32 bg-navy-dark text-white text-center overflow-hidden">
+        <div className="grain absolute inset-0" />
         <div className="absolute inset-0">
           <div className="absolute bottom-0 right-1/4 w-72 h-72 rounded-full bg-gold/[0.04] blur-[80px]" />
+        </div>
+        {/* Background mesh gradient */}
+        <div className="absolute -inset-10 z-[5] pointer-events-none">
+          <Image
+            src="/mesh-gradient.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.6] scale-110"
+          />
         </div>
         <div className="max-w-2xl mx-auto px-6 relative z-10">
           <FadeIn>
