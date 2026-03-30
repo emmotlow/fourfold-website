@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import FadeIn from "@/components/FadeIn";
 import BlogPostCTA from "@/components/BlogPostCTA";
@@ -82,11 +83,22 @@ export default async function BlogPostPage({
       />
 
       {/* ── Hero ── */}
-      <section className="relative bg-navy-dark text-white overflow-hidden grain">
+      <section className="relative bg-navy-dark text-white overflow-hidden">
+        <div className="grain absolute inset-0" />
         <div className="absolute inset-0">
           <div className="absolute top-20 left-16 w-56 h-56 rounded-full border border-white/[0.04] animate-float" />
           <div className="absolute bottom-12 right-24 w-32 h-32 rounded-full border border-gold/[0.08] animate-float-slow" />
           <div className="absolute top-1/2 right-1/4 w-80 h-80 rounded-full bg-gold/[0.04] blur-[100px]" />
+        </div>
+        {/* Background grid pattern */}
+        <div className="absolute inset-0 z-[5] pointer-events-none">
+          <Image
+            src="/blog-grid-pattern.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.5]"
+            priority
+          />
         </div>
         <div className="max-w-6xl mx-auto px-6 py-28 md:py-40 relative z-10">
           <FadeIn>
@@ -110,15 +122,9 @@ export default async function BlogPostPage({
       {/* ── Content ── */}
       <article className="bg-white">
         {Content ? <Content /> : null}
-
-        {post.slug !== "planorize" && (
-          <section className="pb-24 md:pb-32">
-            <div className="max-w-3xl mx-auto px-6">
-              <BlogPostCTA />
-            </div>
-          </section>
-        )}
       </article>
+
+      {post.slug !== "planorize" && <BlogPostCTA />}
     </>
   );
 }
