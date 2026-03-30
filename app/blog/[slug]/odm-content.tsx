@@ -1,28 +1,38 @@
+import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 
 export default function ODMContent() {
   return (
     <>
       {/* Intro (new) */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-3xl mx-auto px-6">
-          <div className="text-lg text-slate-600 leading-relaxed space-y-6">
-            <FadeIn>
-              <p>
-                We built Pact on a simple conviction: management should measure
-                what matters, not what&rsquo;s easy to count. Most organizations
-                track tasks, hours, and status updates. None of those tell you
-                whether the actual business result is on track.
-              </p>
-            </FadeIn>
-            <FadeIn delay={100}>
-              <p>
-                That&rsquo;s why we developed Outcome-Driven Management (ODM),
-                the operating framework behind everything Pact does. Here&rsquo;s
-                how it works, and why it matters more now than ever.
-              </p>
-            </FadeIn>
-          </div>
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        {/* Background illustration */}
+        <div className="absolute inset-0 pointer-events-none">
+          <Image
+            src="/blog-odm-target.png"
+            alt=""
+            fill
+            className="object-cover opacity-[0.25] scale-150 -translate-x-[5%]"
+          />
+        </div>
+        <div className="max-w-3xl mx-auto px-6 relative z-10">
+          <FadeIn>
+            <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg">
+              <div className="text-lg text-slate-600 leading-relaxed space-y-6">
+                <p>
+                  We built Pact on a simple conviction: management should measure
+                  what matters, not what&rsquo;s easy to count. Most organizations
+                  track tasks, hours, and status updates. None of those tell you
+                  whether the actual business result is on track.
+                </p>
+                <p>
+                  That&rsquo;s why we developed Outcome-Driven Management (ODM),
+                  the operating framework behind everything Pact does. Here&rsquo;s
+                  how it works, and why it matters more now than ever.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
