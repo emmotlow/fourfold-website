@@ -20,8 +20,9 @@ export default function ODMContent() {
             <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg">
               <div className="text-lg text-slate-600 leading-relaxed space-y-6">
                 <p>
-                  We built Pact on a simple conviction: management should measure
-                  what matters, not what&rsquo;s easy to count. Most organizations
+                  Fourfold runs on Pact, an agentic software factory. Pact was
+                  built on a simple conviction: management should measure what
+                  matters, not what&rsquo;s easy to count. Most organizations
                   track tasks, hours, and status updates. None of those tell you
                   whether the actual business result is on track.
                 </p>
